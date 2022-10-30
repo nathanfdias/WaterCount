@@ -1,0 +1,24 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 7vh;
+}
+  
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.menu li a {
+  color: #fff;
+  font-size: 1.5rem;
+  padding-bottom: 3px;
+}
+
+.menu li a:hover {
+  border-bottom: 1px solid white;
+}

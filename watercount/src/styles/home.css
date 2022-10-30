@@ -1,0 +1,43 @@
+.home{
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.main-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-description-text{
+    font-size: 1.2rem;
+}
+
+.main-logo-title{
+    font-size: 2.2rem;
+}
+
+.main-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    gap: 60px;
+}
+
+.main-data-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 50%;
+}
