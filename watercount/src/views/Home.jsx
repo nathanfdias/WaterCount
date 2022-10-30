@@ -10,20 +10,23 @@ const Home = props => (
       <div className='main-data'>
         <div className='main-data-content'>
           <h1>920</h1>
-          <p>HOURS</p>
+          <p>CUPS</p>
         </div>
         <div className='main-data-content'>
           <h1>920</h1>
-          <p>HOURS</p>
+          <p>ML</p>
         </div>
         <div className='main-data-content'>
           <h1>920</h1>
-          <p>HOURS</p>
+          <p>GOAL</p>
         </div>
         <div className='main-data-content'>
           <h1>920</h1>
-          <p>HOURS</p>
+          <p>TOTAL</p>
         </div>
+      </div>
+      <div className='button'>
+        <button>RESET</button>
       </div>
     </main>
   );
