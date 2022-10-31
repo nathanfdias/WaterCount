@@ -1,7 +1,11 @@
+import React, { useContext } from 'react';
+import { context } from '../context';
 import '../styles/home.css';
 
-const Home = props => (
+const Home = props => {
+    const ctx = useContext(context);
     
+    return(
     <main className="home">
       <div className='main-description'>
         <h1 className='main-logo-title'>WATER COUNTER</h1>
@@ -9,11 +13,11 @@ const Home = props => (
       </div>
       <div className='main-data'>
         <div className='main-data-content'>
-          <h1>00</h1>
+          <h1>{ctx.cup}</h1>
           <p>CUPS</p>
         </div>
         <div className='main-data-content'>
-          <h1>920</h1>
+          <h1>{ctx.valueml}</h1>
           <p>ML</p>
         </div>
         <div className='main-data-content'>
@@ -29,6 +33,7 @@ const Home = props => (
         <button>RESET</button>
       </div>
     </main>
-  );
+    );
+};
   
   export default Home;

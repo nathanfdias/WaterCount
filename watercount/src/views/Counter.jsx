@@ -1,10 +1,12 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { context } from '../context'
 import '../styles/counter.css';
 
 const Counter = props => {
   const [contador, setContador] = useState(0);
   const [consumo, setConsumo] = useState(0); 
   const [copoml, setCopoml] = useState(""); 
+  const ctx = useContext(context);
 
   function somar() {
     console.log("Somando")
@@ -70,6 +72,11 @@ const Counter = props => {
     setConsumo(valorConsumido)
   }
 
+  function salvar() {
+    ctx.setValueMl(ctx.valueml += consumo);
+    ctx.setCup(ctx.cup += contador);
+  }
+
     return(
 
     <div className="counter">
@@ -93,7 +100,7 @@ const Counter = props => {
           <h2 className='number-cup'>{consumo + " ML"}</h2>
         </div>
         <div className='counter-save'>
-          <button>Save</button>
+          <button onClick={salvar}>Save</button>
         </div>
       </div>
     </div>
