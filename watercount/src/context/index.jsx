@@ -5,7 +5,8 @@ export const context = createContext();
 export const ContextProvider = props => {
 
   const [valueml, setValueMl] = useState(0)
-  const [cup, setCup] = useState(0)
+  const [cup, setCup] = useState(0) 
+  const [goal, setGoal] = useState(0)
 
   return (
     <context.Provider
@@ -13,10 +14,12 @@ export const ContextProvider = props => {
           valueml, 
           setValueMl,
           cup,
-          setCup
+          setCup,
+          goal,
+          setGoal
         }}
         >
-            {props.children}
-        </context.Provider>
+        {props.children}
+    </context.Provider>
   )
 }

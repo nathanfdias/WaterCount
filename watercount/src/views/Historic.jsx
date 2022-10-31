@@ -1,9 +1,23 @@
-const Historic = props => (
+import '../styles/historic.css';
+
+const Historic = props => {
+
+  const historicTxt = () =>{
     
+    document.createElement("li");
+  }
+
+  return(
     <div className="historic">
-      <h1>404</h1>
-       <p>Ops.... Pagina nao encontrada!</p>
+      <div className='historic-title'>
+        <h1>Historic</h1>
+      </div>
+      <div className='historic-context' id='myList' >
+        
+      </div>
     </div>
-  );
+    );
+    
+  };
   
   export default Historic;

@@ -4,6 +4,14 @@ import '../styles/home.css';
 
 const Home = props => {
     const ctx = useContext(context);
+
+    const resetAll = () => {
+      console.log("Valor Zero Reset");
+      let zero = 0;
+      ctx.setValueMl(ctx.valueml -= ctx.valueml)
+      ctx.setCup(zero)
+      ctx.setGoal(zero)
+    }
     
     return(
     <main className="home">
@@ -21,16 +29,16 @@ const Home = props => {
           <p>ML</p>
         </div>
         <div className='main-data-content'>
-          <h1>920</h1>
+          <h1>{ctx.goal}</h1>
           <p>GOAL</p>
         </div>
         <div className='main-data-content'>
-          <h1>00</h1>
+          <h1>0</h1>
           <p>DAYS</p>
         </div>
       </div>
       <div className='button'>
-        <button>RESET</button>
+        <button onClick={resetAll}>RESET</button>
       </div>
     </main>
     );

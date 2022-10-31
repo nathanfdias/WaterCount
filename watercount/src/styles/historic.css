@@ -1,0 +1,31 @@
+.historic{
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.historic-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    gap: 2rem;
+    color: rgba(255, 255, 255, 0.932);
+}
+
+
+.historic-context {
+    width: 50vw;
+    height: 60vh;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    font-size: 1.4rem;
+}
