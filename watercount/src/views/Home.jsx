@@ -9,7 +9,7 @@ const Home = props => (
       </div>
       <div className='main-data'>
         <div className='main-data-content'>
-          <h1>920</h1>
+          <h1>00</h1>
           <p>CUPS</p>
         </div>
         <div className='main-data-content'>
@@ -21,8 +21,8 @@ const Home = props => (
           <p>GOAL</p>
         </div>
         <div className='main-data-content'>
-          <h1>920</h1>
-          <p>TOTAL</p>
+          <h1>00</h1>
+          <p>DAYS</p>
         </div>
       </div>
       <div className='button'>
