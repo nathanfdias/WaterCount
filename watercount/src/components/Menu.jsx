@@ -19,7 +19,7 @@ const Menu = props => (
             <Link to="/historic">Historic</Link>
           </li>
           <li>
-            <Link>About</Link>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </nav>

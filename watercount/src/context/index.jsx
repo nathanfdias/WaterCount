@@ -9,6 +9,7 @@ export const ContextProvider = (props) => {
   const [cuphist, setCuphist] = useState(0);
   const [quantcuphist, setQuantcuphist] = useState(0);
   const [historicData, setHistoricData] = useState("");
+  const [status, setStatus] = useState("Goal not Reached")
 
   return (
     <context.Provider
@@ -24,7 +25,9 @@ export const ContextProvider = (props) => {
         quantcuphist,
         setQuantcuphist,
         historicData, 
-        setHistoricData
+        setHistoricData,
+        status,
+        setStatus
       }}
     >
       {props.children}

@@ -13,6 +13,15 @@ const Goals = props => {
     } else {
       ctx.setGoal(goalCount);
     }
+
+    statusConfer();
+  }
+
+  function statusConfer() {
+    if (goalCount <= ctx.valueml){
+      let msg = "Goal Reached"
+      ctx.setStatus(msg)
+    }
   }
 
   const goalValue = (e) => {

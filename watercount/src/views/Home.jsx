@@ -11,6 +11,7 @@ const Home = (props) => {
     ctx.setValueMl((ctx.valueml -= ctx.valueml));
     ctx.setCup(zero);
     ctx.setGoal(zero);
+    ctx.setStatus("Goal not Reached");
   };
 
   return (
@@ -42,6 +43,13 @@ const Home = (props) => {
       </div>
       <div className="button">
         <button onClick={resetAll}>RESET</button>
+      </div>
+      <div className="status">
+        <p>x</p>
+        <h2>
+          {ctx.status}
+        </h2>
+        <p>x</p>
       </div>
     </main>
   );

@@ -1,0 +1,15 @@
+.about{
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.about p {
+    font-size: 1.4rem;
+    width: 60%;
+    text-align: center;
+    line-height: 1.8rem;
+}
