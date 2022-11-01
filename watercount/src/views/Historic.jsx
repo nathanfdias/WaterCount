@@ -16,12 +16,11 @@ const Historic = props => {
     let horario = `${hora}:${minuto}.${segundo}`
     let dataAtual = `${mes}/${dia}/${ano}`
 
-    let novo_elemento = document.createElement('p');
-    // novo_elemento.innerText = `Cup quantity: ${ctx.cuphist} | Ml cup: ${ctx.quantcuphist} | Data: ${dataAtual} | Time: ${horario}`;
-    // novo_elemento.innerHTML = {ctx.historicData};
-    
-    let elemento = document.querySelector('#myList');
-    elemento.appendChild(novo_elemento);
+    // let novo_elemento = document.createElement('p');
+    // // novo_elemento.innerText = `Cup quantity: ${ctx.cuphist} | Ml cup: ${ctx.quantcuphist} | Data: ${dataAtual} | Time: ${horario}`;
+    // // novo_elemento.innerHTML = {ctx.historicData};
+    // let elemento = document.querySelector('#myList');
+    // elemento.appendChild(novo_elemento);
     
     var frase = `Cup quantity: ${ctx.cuphist} | Ml cup: ${ctx.quantcuphist} | Data: ${dataAtual} | Time: ${horario}`;
     ctx.setHistoricData(frase);
