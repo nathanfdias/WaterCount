@@ -7,7 +7,7 @@ import '../styles/content.css';
 
 const Content = props => (
     
-    <aside className="content">
+    <div className="content">
   
       <Routes>
         <Route path="/home" element={<Home />} />
@@ -16,7 +16,7 @@ const Content = props => (
         <Route path="/goals" element={ <Goals />} />
       </Routes>
     
-    </aside>
+    </div>
   );
   
   export default Content;

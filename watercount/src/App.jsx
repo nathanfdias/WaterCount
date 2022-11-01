@@ -10,7 +10,7 @@ const App = props => {
       <Router>
         <Menu />
         <Content />
-    </Router>
+      </Router>
     </div>
   )
 }

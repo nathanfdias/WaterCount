@@ -5,11 +5,14 @@ import '../styles/counter.css';
 const Counter = props => {
   const [contador, setContador] = useState(0);
   const [consumo, setConsumo] = useState(0); 
-  const [copoml, setCopoml] = useState(""); 
+  const [copoml, setCopoml] = useState(0); 
+  const [copomlReal, setCopomlReal] = useState(0);
   const ctx = useContext(context);
 
   function somar() {
     console.log("Somando")
+    let copohist = copomlReal + 1;
+    setCopomlReal(copohist);
     let num = contador + 1;
     if (num <= 100){
       setContador(num)
@@ -22,6 +25,8 @@ const Counter = props => {
 
   function diminuir() {
     console.log("Diminuindo")
+    let copohist = copomlReal - 1;
+    setCopomlReal(copohist);
     let num = contador - 1;
     if( num > -1){
       setContador(num)
@@ -45,8 +50,9 @@ const Counter = props => {
   const zerar = () => {
     console.log("Zerando")
     let num = 0;
-    setContador(num)
-    setConsumo(num)
+    setContador(num);
+    setConsumo(num);
+    setCopomlReal(num);
   }
 
   const copoML = (e) => {
@@ -75,6 +81,14 @@ const Counter = props => {
   function salvar() {
     ctx.setValueMl(ctx.valueml += consumo);
     ctx.setCup(ctx.cup += contador);
+    ctx.setCuphist(contador);
+    historic();
+  }
+  
+  function historic() {
+    ctx.setCuphist(copomlReal);
+    ctx.setQuantcuphist(copoml);
+    console.log(ctx.cuphist);
   }
 
     return(

@@ -4,7 +4,7 @@ import { context } from '../context'
 
 const Goals = props => {
   const [goalCount, setGoalCount] = useState(); 
-  const ctx = useContext(context);  
+  const ctx = useContext(context); 
 
   function Send() {
     console.log(goalCount);
