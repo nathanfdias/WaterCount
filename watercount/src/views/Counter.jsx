@@ -83,6 +83,24 @@ const Counter = props => {
     ctx.setCup(ctx.cup += contador);
     ctx.setCuphist(contador);
     historic();
+
+    let data = new Date();
+    let dia = String(data.getDate()).padStart(2, '0')
+    let mes = String(data.getMonth() + 1).padStart(2, '0')
+    let ano = String(data.getFullYear())
+    let hora = String(data.getHours())
+    let minuto = String(data.getMinutes())
+    let segundo = String(data.getSeconds())
+    let horario = `${hora}:${minuto}.${segundo}`
+    let dataAtual = `${mes}/${dia}/${ano}`
+    
+    var frase = [`Cup quantity: ${copomlReal} | Ml consumed: ${consumo} | Date: ${dataAtual} | Time: ${horario}`];
+    ctx.historicData.push(frase);
+
+    if (ctx.goal <= ctx.valueml){
+      let msg = "Goal Reached"
+      ctx.setStatus(msg)
+    }
   }
   
   function historic() {

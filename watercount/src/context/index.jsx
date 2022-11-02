@@ -8,7 +8,7 @@ export const ContextProvider = (props) => {
   const [goal, setGoal] = useState(0);
   const [cuphist, setCuphist] = useState(0);
   const [quantcuphist, setQuantcuphist] = useState(0);
-  const [historicData, setHistoricData] = useState("");
+  const [historicData, setHistoricData] = useState([]);
   const [status, setStatus] = useState("Goal not Reached")
 
   return (
